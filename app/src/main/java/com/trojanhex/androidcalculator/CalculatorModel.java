@@ -31,7 +31,7 @@ public class CalculatorModel {
 
         double res = a+b;
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }
@@ -43,7 +43,7 @@ public class CalculatorModel {
 
         double res = a-b;
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }
@@ -55,7 +55,7 @@ public class CalculatorModel {
 
         double res = a*b;
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }
@@ -65,11 +65,11 @@ public class CalculatorModel {
         double a = Double.parseDouble(lastNumber);
         double b = Double.parseDouble(currentNumber);
 
-        if(b == 0.0) return "MATH ERROR";
+        if(b == 0.0) return "NAN";
 
         double res = a/b;
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }
@@ -81,7 +81,7 @@ public class CalculatorModel {
 
         double res = Math.pow(a,b);
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }
@@ -93,7 +93,7 @@ public class CalculatorModel {
 
         double res = a%b;
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }
@@ -102,11 +102,11 @@ public class CalculatorModel {
     {
         double b = Double.parseDouble(currentNumber);
 
-        if(b < 0) return "MATH ERROR";
+        if(b < 0) return "NAN";
 
         double res = Math.sqrt(b);
 
-        String result = String.format("%.1f",res);
+        String result = String.format("%.5f",res);
 
         return result;
     }

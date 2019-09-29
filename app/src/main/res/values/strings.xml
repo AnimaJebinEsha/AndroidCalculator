@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Calculator</string>
+    <string name="app_name">Android device calculator</string>
     <string name="_C">C</string>
     <string name="sqrtRootSign">√</string>
     <string name="powerSign">^</string>
